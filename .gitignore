@@ -6,3 +6,6 @@
 the-crane-html/index-bak.html
 /the-crane-html/**/*bak*
 **/*bak*
+
+/crane-server/node_modules/
+/crane-server/package-lock.json

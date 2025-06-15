@@ -1,0 +1,102 @@
+Node.js + Express 기반 API 서버를 로컬에서 처음부터 실행하기 위해 필요한 모든 과정을 단계별로 설명할게요.
+완전히 처음부터 진행하는 방식입니다.
+
+✅ 1단계: Node.js 설치 확인
+터미널에서 아래 명령어 입력:
+node -v
+npm -v
+둘 다 버전이 잘 나오면 OK
+안 나오면 https://nodejs.org/ 가서 LTS 버전 설치
+
+✅ 2단계: 프로젝트 초기화
+1. 폴더 만들기
+mkdir portal-api
+cd portal-api
+
+2. Node.js 프로젝트 초기화
+npm init -y
+
+✅ 3단계: Express 설치
+npm install express
+
+✅ 4단계: 폴더 및 파일 생성
+아래 명령어로 폴더/파일 구조 만들기 (macOS/Linux 기준):
+
+mkdir -p src/{api,routers,services,utils,common}
+touch src/ServerApp.js src/ecoSystemConfig.js
+touch src/routers/index.js src/routers/salesPreRegisterRouter.js
+touch src/api/preRegister.js
+touch src/services/preRegisterService.js
+touch src/utils/asyncWrapper.js src/utils/errors.js src/utils/userChecker.js
+Windows일 경우 수동으로 만들어주세요.
+
+✅ 5단계: 코드 복사
+이전에 내가 준 코드들 각각의 파일에 그대로 붙여넣으면 됩니다.
+
+src/ServerApp.js부터 src/utils/userChecker.js까지 코드 복사해서 각 파일에 넣기
+
+✅ 디렉토리 구조
+src/
+├── api/
+│   └── preRegister.js
+├── routers/
+│   ├── index.js
+│   └── salesPreRegisterRouter.js
+├── services/
+│   └── preRegisterService.js
+├── utils/
+│   ├── asyncWrapper.js
+│   └── errors.js
+├── common/
+├── ServerApp.js
+└── ecoSystemConfig.js
+
+# 1. seller-summary
+curl -X POST http://localhost:4000/api/sales/pre-register/seller-summary \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","endDate":"2025-06-15","sellerId":1,"metricIdList":[1,2,3]}'
+
+# 2. seller-trend
+curl -X POST http://localhost:4000/api/sales/pre-register/seller-trend \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","endDate":"2025-06-15","sellerId":1,"metricIdList":[1,2,3]}'
+
+# 3. seller-applications
+curl -X POST http://localhost:4000/api/sales/pre-register/seller-applications \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","endDate":"2025-06-15","sellerId":1,"metricIdList":[1,2,3]}'
+
+# 4. content-summary
+curl -X POST http://localhost:4000/api/sales/pre-register/content-summary \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","endDate":"2025-06-15","sellerId":1,"metricIdList":[1,2,3]}'
+
+# 5. content-trend
+curl -X POST http://localhost:4000/api/sales/pre-register/content-trend \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","endDate":"2025-06-15","sellerId":1,"metricIdList":[1,2,3]}'
+
+# 6. content-channel-trend
+curl -X POST http://localhost:4000/api/sales/pre-register/content-channel-trend \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","startDate":"2025-06-01","endDate":"2025-06-15","contentId":"abcd1234"}'
+
+# 7. content-channel-trend/sub
+curl -X POST http://localhost:4000/api/sales/pre-register/content-channel-trend/sub \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","startDate":"2025-06-01","endDate":"2025-06-15","contentId":"abcd1234","channelId":"google"}'
+
+# 8. content-channel-trend/sub/detail
+curl -X POST http://localhost:4000/api/sales/pre-register/content-channel-trend/sub/detail \
+  -H "Content-Type: application/json" \
+  -d '{"dataType":"daily","startDate":"2025-06-01","endDate":"2025-06-15","contentId":"abcd1234","channelId":"google","subChannelId":"google-play"}'
+
+
+
+스크립트
+# 1. 실행 권한 부여
+# chmod +x test_pre_register_apis.sh
+# 2. 실행
+# ./test_pre_register_apis.sh
+# ** 설치 json pretty
+# brew install jq or apt install jq
