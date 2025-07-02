@@ -9,3 +9,8 @@ the-crane-html/index-bak.html
 
 /crane-server/node_modules/
 /crane-server/package-lock.json
+
+.idea
+._.idea
+**/.idea
+**/._.idea

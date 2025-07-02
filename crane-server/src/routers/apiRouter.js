@@ -2,8 +2,14 @@ const express = require('express');
 const router = express.Router();
 const userChecker = require('../utils/userChecker'); // 사용자 인증 미들웨어
 
-const sellerInfoRouter = require('./sellerInfo');          // sellerInfo.js 라우터
+const cranePreRegisterRouter = require('./cranePreRegisterRouter');
+const cranePromotionRouter = require('./craneNewerPromotionRouter');
+const extAppPromotionRouter = require('./extPromotionRouter');
 
-router.use('/seller/info', userChecker, sellerInfoRouter);
+router.use('/member/pre-register', userChecker, cranePreRegisterRouter);
+
+// router.use('/evnet/promotion', userChecker, cranePromotionRouter);
+
+router.use('/ext/app/v1/promotion', userChecker, extAppPromotionRouter);
 
 module.exports = router;

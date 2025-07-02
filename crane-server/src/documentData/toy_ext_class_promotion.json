@@ -1,0 +1,149 @@
+[
+  {
+    "promotionId" : "promo20250520kj",
+    "promotionName" : "광주 전남 크레인 보충 특강",
+    "from" : 1747713600,
+    "to" : 1748664000,
+    "activated" : false
+  },
+  {
+    "promotionId": "promo20250506bs",
+    "promotionName": "부산 지역 크레인 집중 교육",
+    "from": 1746499200,
+    "to": 1747353600,
+    "activated": true
+  },
+  {
+    "promotionId": "promo20250617dj",
+    "promotionName": "대전 산업단지 특화 보충 강의",
+    "from": 1749936000,
+    "to": 1750790400,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250525kj",
+    "promotionName": "광주 전남 조기 등록 프로모션",
+    "from": 1747886400,
+    "to": 1748740800,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250605dg",
+    "promotionName": "대구 기초 특강 집중반",
+    "from": 1749158400,
+    "to": 1750012800,
+    "activated": true
+  },
+  {
+    "promotionId": "promo20250513us",
+    "promotionName": "울산 기능 향상 프로그램",
+    "from": 1747094400,
+    "to": 1747948800,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250626ic",
+    "promotionName": "인천 항만 산업 특별반",
+    "from": 1750694400,
+    "to": 1751548800,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250531jj",
+    "promotionName": "제주도 여름 시즌 사전 등록",
+    "from": 1748400000,
+    "to": 1749254400,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250613su",
+    "promotionName": "서울 경기권 집중 프로모션",
+    "from": 1749609600,
+    "to": 1750464000,
+    "activated": true
+  },
+  {
+    "promotionId": "promo20250521kj",
+    "promotionName": "광주 전남 크레인 보충 특강",
+    "from": 1747800000,
+    "to": 1748654400,
+    "activated": true
+  },
+  {
+    "promotionId": "promo20250602gn",
+    "promotionName": "경남 기능 보충 캠페인",
+    "from": 1748928000,
+    "to": 1749782400,
+    "activated": true
+  },
+  {
+    "promotionId": "promo20250503dj",
+    "promotionName": "대전 기초 기능 마스터 클래스",
+    "from": 1746240000,
+    "to": 1747094400,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250601gj",
+    "promotionName": "경기 지역 여름 특강",
+    "from": 1748841600,
+    "to": 1749696000,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250511kj",
+    "promotionName": "광주 전남 크레인 집중반",
+    "from": 1746921600,
+    "to": 1747776000,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250628bs",
+    "promotionName": "부산 항만 특화 실무반",
+    "from": 1750867200,
+    "to": 1751721600,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250515gn",
+    "promotionName": "경남 산업 특강 주간",
+    "from": 1747267200,
+    "to": 1748121600,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250608us",
+    "promotionName": "울산 크레인 실습 위주 수업",
+    "from": 1749427200,
+    "to": 1750281600,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250528jj",
+    "promotionName": "제주 실습 특화 교육과정",
+    "from": 1748140800,
+    "to": 1748995200,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250604ic",
+    "promotionName": "인천 항만 장비 실무반",
+    "from": 1749072000,
+    "to": 1749926400,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250508su",
+    "promotionName": "서울 수도권 보충반 프로모션",
+    "from": 1746662400,
+    "to": 1747516800,
+    "activated": false
+  },
+  {
+    "promotionId": "promo20250621dg",
+    "promotionName": "대구 여름방학 특강 시작",
+    "from": 1750262400,
+    "to": 1751116800,
+    "activated": false
+  }
+]
