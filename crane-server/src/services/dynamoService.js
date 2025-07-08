@@ -1,4 +1,4 @@
-const { queryByPKSK, queryByGSI, getMemberPreRegisterList } = require('../documentData/localDynamo');
+const { queryByPKSK, queryByGSI, getMemberPreRegisterList } = require('../localDocuments/dynamoLocalDB');
 
 /*
     "sid_tid_ctcd_pcode_dateType": "ksj880211_820810pjk_SEOUL_VISA_day",

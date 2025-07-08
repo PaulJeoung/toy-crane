@@ -1,7 +1,6 @@
 const promotionService = require('../services/extPromotionApiService');
 const pofApiService = require('../services/extPOFApiService');
 
-
 module.exports.getPromotionList = async ( params ) => {
     const allPromotionList = promotionService.fetchPromotions(params);
     // allPromotionList.forEach(item => {

@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const asyncWrapper = require('../utils/asyncWrapper');
-const { RequestParamterError } = require('../utils/errors');
+const asyncWrapper = require('../common/asyncWrapper');
+const { RequestParamterError } = require('../common/errors');
 
 const preRegisterApi = require('../api/cranePreRegisterManager');
 

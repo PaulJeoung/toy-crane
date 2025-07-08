@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const asyncWrapper = require('../utils/asyncWrapper');
-const { RequestParameterError } = require('../utils/errors');
+const asyncWrapper = require('../common/asyncWrapper');
+const { RequestParameterError } = require('../common/errors');
 const promotionApi = require('../api/extPromotionApi');
 
 // External API 호출
