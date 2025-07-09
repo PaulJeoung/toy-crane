@@ -1,5 +1,6 @@
 const promotionService = require('../services/extPromotionApiService');
 const pofApiService = require('../services/extPOFApiService');
+const generateSampleData = require('../localDocuments/createDummyData');
 
 module.exports.getPromotionList = async ( params ) => {
     const allPromotionList = promotionService.fetchPromotions(params);
@@ -34,3 +35,11 @@ module.exports.newbieMemberList = async ( params ) => {
         status : item.status,
     }));
 }
+
+module.exports.newbieDummyData = async () => {
+    const result = generateSampleData();
+    // result.forEach(item => {
+    //     console.log(JSON.stringify(item, null, 2));
+    // })
+    return result;
+};
