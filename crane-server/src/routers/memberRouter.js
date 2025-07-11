@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const asyncWrapper = require('../common/asyncWrapper');
 const { RequestParamsError } = require('../common/errors');
-const memberManagementApi = require('../api/memberManagementApi');
+const memberManagementApi = require('../api/memberApi');
 
 /**
  * @swagger

@@ -2,9 +2,9 @@ const fs = require('fs').promises;
 const path = require('path');
 const { RequestParamsError } = require('../common/errors');
 
-class ToyUserClassService {
+class MemberLocalService {
     constructor() {
-        this.filePath = path.join(__dirname, '../localDocuments/toy_user_class_info.json');
+        this.filePath = path.join(__dirname, '../localDocuments/local_member_document.json');
     }
 
     async readUserList() {
@@ -37,4 +37,4 @@ class ToyUserClassService {
         return newUser;
     }
 }
-module.exports = new ToyUserClassService();
+module.exports = new MemberLocalService();

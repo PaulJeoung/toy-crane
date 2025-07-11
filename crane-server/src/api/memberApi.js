@@ -1,4 +1,4 @@
-const toyUserClassService = require('../services/toyUserClassService');
+const toyUserClassService = require('../services/memberLocalService');
 
 module.exports.postMemberSignUp = async (params) => {
     const newMember = {
