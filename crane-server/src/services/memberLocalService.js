@@ -36,5 +36,27 @@ class MemberLocalService {
         console.log('newUser 입력',newUser);
         return newUser;
     }
+
+    async updateUser(memberId, updateField) {
+        const userList = await this.readUserList();
+        const findUser = userList.find(user => user.memberId === memberId);
+        if (findUser === -1) {
+            throw new RequestParamsError (`MemberId ${memberId} not found`);
+        }
+        userList[findUser] = { ...userList[findUser], ...updateField }; // field merge
+        await this.writeUserList(userList);
+        return userList[findUser];
+    }
+
+    async deleteUser(memberId) {
+        const userList = await this.readUserList();
+        const findUser = userList.find(user => user.memberId === memberId);
+        if (findUser === -1) {
+            throw new RequestParamsError (`MemberId ${memberId} not found`);
+        }
+        const deleteUser = userList.splice(findUser, 1);
+        await this.writeUserList(userList);
+        return deleteUser[0];
+    }
 }
 module.exports = new MemberLocalService();

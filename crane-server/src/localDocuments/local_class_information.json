@@ -1,0 +1,54 @@
+[
+  {
+    "classId": "c0001",
+    "className": "크레인 기초 이론 I",
+    "classTeacher": "고길동",
+    "classType": "이론 강좌",
+    "classRegion": "경기/인천",
+    "classPrice": 2500000,
+    "classDiscount": 50,
+    "startDate": "2025-03-01 00:00:00",
+    "endDate": "2025-05-31 23:59:59",
+    "minClassNum": 10,
+    "maxClassNum": 30
+  },
+  {
+    "classId": "c0002",
+    "className": "크레인 기초 이론 II",
+    "classTeacher": "나기사",
+    "classType": "이론 강좌",
+    "classRegion": "경기/인천",
+    "classPrice": 2500000,
+    "classDiscount": 50,
+    "startDate": "2025-04-01 00:00:00",
+    "endDate": "2025-06-30 23:59:59",
+    "minClassNum": 10,
+    "maxClassNum": 30
+  },
+  {
+    "classId": "c0003",
+    "className": "크레인 기초 이론 III",
+    "classTeacher": "고길동",
+    "classType": "이론 강좌",
+    "classRegion": "경기/인천",
+    "classPrice": 1500000,
+    "classDiscount": 30,
+    "startDate": "2025-04-01 00:00:00",
+    "endDate": "2025-07-31 23:59:59",
+    "minClassNum": 5,
+    "maxClassNum": 40
+  },
+  {
+    "classId": "c0004",
+    "className": "크레인 실기 특강 I",
+    "classTeacher": "다아라",
+    "classType": "실기 특강",
+    "classRegion": "경기/인천",
+    "classPrice": 1000000,
+    "classDiscount": 70,
+    "startDate": "2025-06-01 00:00:00",
+    "endDate": "2025-07-31 23:59:59",
+    "minClassNum": 10,
+    "maxClassNum": 15
+  }
+]

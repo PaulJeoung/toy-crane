@@ -12,5 +12,12 @@
     "password": "1234",
     "birthInfo": "1992-01-19",
     "createdAt": "2025-07-11T15:18:13.943Z"
+  },
+  {
+    "memberId": "user19",
+    "memberName": "손명호",
+    "password": "1234",
+    "birthInfo": "1990-01-01",
+    "createdAt": "2025-07-11T16:37:52.581Z"
   }
 ]
